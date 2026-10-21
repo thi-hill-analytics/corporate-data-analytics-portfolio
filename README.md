@@ -1,14 +1,14 @@
-# Professional Data Analytics & Governance Portfolio
+# Professional Data Analytics & Operational Governance Portfolio
 
-Welcome to my technical portfolio. As an analyst with a Master’s degree in Philosophy, I focus my technical pipeline on data quality, data auditing, structural cleaning, and compliance verification.
+Welcome to my technical analytics portfolio. As an analyst with a Master’s degree in Philosophy specializing in institutional governance and systemic ethics, paired with a professional background as a Corporate Marketing Specialist, I focus my data pipeline on data quality, data auditing, structural cleaning, and compliance verification.
 
-Below are production-ready SQL and Python data-wrangling models designed for specific corporate operational scenarios.
+Below are production-ready SQL and Python data-wrangling models designed to solve complex, real-world corporate operational challenges.
 
 ---
 
-## Project 1: Logistics Supply Chain Optimization
-* **Business Problem:** Identifying unreliable shipping partners causing factory assembly line delays for Automobile Group Logistics.
-* **The SQL Cleaning Solution:** This query filters for delayed shipments, aggregates the total number of delays per supplier, and calculates the total financial impact.
+## Project 1: Multi-Channel Supply Chain & Logistics Revenue Leakage Audit
+* **Case Study Framework:** This project is a simulated case study modeled after global industrial distribution frameworks (such as Volvo Group Logistics). It demonstrates my ability to audit raw regional supplier datasets, calculate financial losses from late drop-offs, and track vendor reliability metrics.
+* **The SQL Cleaning Solution:** This query filters for delayed shipments, aggregates the total number of delays per supplier, and calculates the total financial impact to protect factory assembly lines.
 
 ```sql
 SELECT
@@ -27,9 +27,9 @@ ORDER BY
 
 ---
 
-## Project 2: Clinical Trial Safety Filtering
-* **Business Problem:** Extracting baseline safety data for high-risk patients (over 55 with high systolic blood pressure) before running biostatistical analysis.
-* **The SQL Solution:** This query filters the clinical database using multiple parameters to ensure patient safety metrics are isolated.
+## Project 2: Automated Data Sanitisation & High-Risk Parameter Filtering
+* **Case Study Framework:** This project is a data governance model built to mirror strict international regulatory standards (such as AstraZeneca clinical trial safety protocols). It showcases my ability to segment highly sensitive information and enforce strict quality guardrails across database rows.
+* **The SQL Solution:** This query filters a sensitive operational database using multiple strict parameters to ensure specific high-risk cohorts are safely isolated for advanced statistical reporting.
 
 ```sql
 SELECT
@@ -45,9 +45,9 @@ WHERE
 
 ---
 
-## Project 3: Food.com Logistics & Order Data Reconciliation
-* **Business Problem:** Standardizing inconsistent text inputs, handling missing drop-off metrics, and filtering programmatic system errors from raw food delivery logistics tracking streams.
-* **The SQL Solution:** This query handles string normalization to group duplicate parameters and calculates revenue loss from extreme delivery delays.
+## Project 3: E-Commerce Customer Engagement & Operational Metric Reconciliation
+* **Case Study Framework:** Inspired by my professional background as a Marketing Specialist managing campaign performance data and customer feedback loops, I designed this data preparation pipeline. It simulates a fast-growing digital platform (such as Hotmat.se) to demonstrate text standardization, string normalization, and identifying revenue leakage from operational bottlenecks.
+* **The SQL Solution:** This query executes heavy string normalization (`TRIM` and `UPPER`) to group duplicate data entries caused by manual restaurant inputs, and uses conditional logic (`SUM(CASE WHEN)`) to isolate financial loss tied to severe delivery delays.
 
 ```sql
 SELECT 
@@ -65,21 +65,26 @@ ORDER BY
   total_delayed_revenue_loss DESC;
 ```
 
+---
+
 ## Programmatic Pre-Cleaning Audit (Python & Pandas)
-Before injecting the raw logistics files into the database, I run programmatic structural checks to audit file schemas, map null constraints, and check type limits.
+* **Operational Intent:** Before injecting raw, decentralized logistics spreadsheets into a production database, I run programmatic structural checks to audit file schemas, map null constraints, and verify type limits.
 
 ```python
 import pandas as pd
 
-# Load raw logistics CSV
+# Load raw operational CSV tracking data
 df = pd.read_csv("hotmat_raw_orders.csv")
 
 # 1. Structural audit: verify memory footprint and data schemas
+print("--- Structural Data Schema ---")
 print(df.info())
 
-# 2. Inspect record footprints for padding anomalies
+# 2. Inspect record footprints for syntax padding or alignment anomalies
+print("\n--- Top 5 Sample Records ---")
 print(df.head())
 
-# 3. Calculate absolute volume of missing data fields
+# 3. Calculate absolute volume of missing/null data fields per column
+print("\n--- Missing Field Matrix ---")
 print(df.isnull().sum())
 ```
