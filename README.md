@@ -1,13 +1,13 @@
 # Professional Data Analytics & Operational Governance Portfolio
 
-Welcome to my technical analytics portfolio. As an analyst with a Master’s degree in Philosophy specializing in institutional governance and systemic ethics, paired with a professional background as a Corporate Marketing Specialist, I focus my data pipeline on data quality, data auditing, structural cleaning, and compliance verification.
+Welcome to my technical analytics portfolio. As an analyst with a Master’s degree in Philosophy specializing in institutional governance and systemic ethics, paired with a professional background as a Marketing Specialist, I focus my data pipeline on data quality, data auditing, structural cleaning, and compliance verification.
 
 Below are production-ready SQL and Python data-wrangling models designed to solve complex, real-world corporate operational challenges.
 
 ---
 
 ## Project 1: Multi-Channel Supply Chain & Logistics Revenue Leakage Audit
-* **Case Study Framework:** This project is a simulated case study modeled after global industrial distribution frameworks (such as Volvo Group Logistics). It demonstrates my ability to audit raw regional supplier datasets, calculate financial losses from late drop-offs, and track vendor reliability metrics.
+* **Case Study Framework:** This project is a simulated case study modeled after global industrial distribution frameworks. It demonstrates my ability to audit raw regional supplier datasets, calculate financial losses from late drop-offs, and track vendor reliability metrics.
 * **The SQL Cleaning Solution:** This query filters for delayed shipments, aggregates the total number of delays per supplier, and calculates the total financial impact to protect factory assembly lines.
 
 ```sql
@@ -28,7 +28,7 @@ ORDER BY
 ---
 
 ## Project 2: Automated Data Sanitisation & High-Risk Parameter Filtering
-* **Case Study Framework:** This project is a data governance model built to mirror strict international regulatory standards (such as AstraZeneca clinical trial safety protocols). It showcases my ability to segment highly sensitive information and enforce strict quality guardrails across database rows.
+* **Case Study Framework:** This project is a data governance model built to mirror strict international regulatory standards. It showcases my ability to segment highly sensitive information and enforce strict quality guardrails across database rows.
 * **The SQL Solution:** This query filters a sensitive operational database using multiple strict parameters to ensure specific high-risk cohorts are safely isolated for advanced statistical reporting.
 
 ```sql
@@ -46,7 +46,7 @@ WHERE
 ---
 
 ## Project 3: E-Commerce Customer Engagement & Operational Metric Reconciliation
-* **Case Study Framework:** Inspired by my professional background as a Marketing Specialist managing campaign performance data and customer feedback loops, I designed this data preparation pipeline. It simulates a fast-growing digital platform (such as Hotmat.se) to demonstrate text standardization, string normalization, and identifying revenue leakage from operational bottlenecks.
+* **Case Study Framework:** Inspired by my professional background as a Marketing Specialist managing campaign performance data and customer feedback loops, I designed this data preparation pipeline. It simulates a fast-growing digital platform to demonstrate text standardization, string normalization, and identifying revenue leakage from operational bottlenecks.
 * **The SQL Solution:** This query executes heavy string normalization (`TRIM` and `UPPER`) to group duplicate data entries caused by manual restaurant inputs, and uses conditional logic (`SUM(CASE WHEN)`) to isolate financial loss tied to severe delivery delays.
 
 ```sql
